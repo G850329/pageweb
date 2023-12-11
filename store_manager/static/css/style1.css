@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Lavishly+Yours&family=Montserrat:ital,wght@1,700&display=swap');
+
+body {
+    margin:0;
+    border:10px solid green;
+    position:absolute;
+   
+}
+
+.main-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    
+}
+
+
+/* secciones */
+.inicio{
+    padding-top:15%;
+
+}
+.nosotros1{
+    padding-top:5%;
+
+}
+
+.promociones1{
+    padding-top:1%;
+    padding-bottom:10%;
+    text-align:center;
+}
+/* fin secciones*/
+
+
+h2{
+    font-family:'Autour One', cursive;
+    font-family:'Lavishly Yours', cursive;
+    font-family:'Montserrat', sans-serif;
+    font-size:50px;
+    color:green;
+    position:static;
+    left:200px;
+    top:100px;
+}
+
+h3{
+    font-family:'Autour One', cursive;
+    font-family:'Lavishly Yours', cursive;
+    font-family:'Montserrat', sans-serif;
+    font-size:40px;
+    color:green;
+    position:static;
+    left:200px;
+    top:100px;
+}
+
+h5{
+    font-family:'Autour One', cursive;
+    font-family:'Lavishly Yours', cursive;
+    font-family:'Montserrat', sans-serif;
+    font-size:18px;
+    color:#ffffff
+  
+}
+   
+*{
+    background:#000000;  /* fallback for old browsers */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+   
+}
+
+ul {
+    display:flex;
+    background-color:black;
+    flex-wrap:wrap;
+    font-size:25px;
+    text-align:center;  
+}
+
+
+
+
+.flotante {
+   
+	font-size:16px; /* Cambiar el tamaño de la tipografia */
+	text-transform:uppercase; /* Texto en mayusculas */
+	font-weight:bold; /* Fuente en negrita o bold */
+	color:#ffffff; /* Color del texto */
+	border-radius:5px; /* Borde del boton */
+	letter-spacing:2px; /* Espacio entre letras */
+	background-color:black; /* Color de fondo */
+	padding:18px 30px; /* Relleno del boton */
+	transition:all 300ms ease 0ms;
+	box-shadow:0px 8px 15px rgb(0, 0, 0);
+
+    text-decoration: none;
+	
+}
+
+.flotante:hover {
+	background-color:green; /* Color de fondo al pasar el cursor */
+	box-shadow:0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform:translateY(-7px);
+}
+
+
+
+/*primera seccion del Index*/
+
+.containerInicial{
+    display:flex;
+    flex:wrap;
+    font-size:25px;
+    text-align:center;
+}
+
+.imagenInicio{
+    width:50%;
+    height:50%;
+    animation:girar 7s linear infinite;
+}
+
+.containerImagen{
+    padding:10px;
+    flex:50%;
+    width:50%;
+    height:50%;
+    animation:girar 7s linear infinite;}
+
+@keyframes girar {
+    form {
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(360deg);
+
+    }
+}
+
+
+.videito{
+    width:100%;
+    height:100%;
+    top:100%;
+    right:100%;
+}
+.textoInicial{
+    color:white;
+    width:100%;
+    height:100%;
+    top:20%;
+    right:45%;
+    padding:15px;
+    text-align:center;
+    font-size:1.5vw;
+    line-height:1vw;  
+}
+
+.imagencerveza{
+    padding:10px;
+    flex:50%;
+}
+
+p{
+    color:#ffffff;
+}
+
+.textonosotros{
+    color:beige;
+    background:linear-gradient(rgb(4, 4, 4), rgb(0, 0, 0));
+    margin:15px;
+    padding:15px;
+    text-align:center;
+    font-size:1.5em;
+    line-height:1.5em;
+}
+.containerInicial{
+    width:100%;
+    height:100%;
+    text-align:center;
+    border-radius:0%;
+    bottom:10%;
+}
+.img1{
+    width:80%;
+    height:40%;
+    border-radius:2%;
+    margin:3%;
+    bottom:10%;
+    flex:1 0 auto;
+
+}
+
+.texto{
+    padding: 10%;
+    flex: 20%;
+}
+
+.botoncompra{
+    padding: 10px;
+    flex: 10%;
+
+}
+
+#add-to-cart-1{
+    background-color: yellow;
+    padding: 10px;
+    flex: 33%;
+}
+
+.containerPromos{
+    text-align:center;
+    display:flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center; /* Centra horizontalmente los elementos dentro del contenedor */
+}
+.containers:hover {
+    flex: 2;
+}
+.containers {
+    flex: 1;
+    border-radius: 1 rem;
+    background-position:center ;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Estilo para el botón "Agregar al carrito" */
+button {
+    background-color:green; /* Color de fondo */
+    color:black; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Relleno interior */
+    border-radius: 40px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón cuando se pasa el mouse sobre él */
+button:hover {
+    background-color: white; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+
+.footer {
+    padding-top: 15%;
+    padding-bottom: 15%;
+
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links {
+    flex:1;
+    width: 33%;
+    padding:2%;
+    flex-wrap:wrap;
+    
+}
+.footer-links h4{
+    text-align: center;
+    font-size: 20px;
+    color:#ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+    display:inline-block
+
+}
+.footer-links ol li a{
+    font-size: 18px;
+    text-decoration:none;
+    color:#ffffff;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s eaese;
+   
+}
+.footer-links ol li a:hover {
+    color:#ffffff;
+    padding: 6px;
+}
+.social-link a{
+    display:inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color:#ffffff;
+    transition: all .5s eaese;
+}
+.social-link a:hover{
+    background-color: green;
+
+}
+.mapa{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.mapa iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.by{
+    position: relative;
+    text-align: center; 
+
+}
+
+@media (max-width: 1200px) {
+
+    .containerPromos{
+        display: flex;
+        overflow: scroll;
+        text-align:center;
+        flex-direction: column;
+        flex-wrap:wrap;    
+        
+    }
+    .containers{
+        position: relative;
+        flex: 1 0 auto;
+        width:50%;
+        margin: 2%;
+        border-radius: 1 rem;
+        left: 20%; 
+        
+    }
+    
+
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;  
+    }
+
+    .footer-links{
+        flex:1;
+        width: 100%;
+        padding:2%;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+

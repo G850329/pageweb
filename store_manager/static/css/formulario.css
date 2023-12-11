@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Lavishly+Yours&family=Montserrat:ital,wght@1,700&display=swap');
+
+*{
+    background:#000000;  /* fallback for old browsers */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+   
+}
+
+body{
+    background-color:black;
+}
+
+.formulario{
+
+    display:flex;
+    height:100vh;
+    padding:10%;
+    gap:10px;
+    flex-wrap:wrap;
+    font-size:25px;
+    text-align:center;
+    position:relative;
+
+}
+
+.container {
+
+    position:relative;
+    left:10%;
+}
+
+
+.formSec{
+    font-family:'Autour One', cursive;
+    font-family:'Lavishly Yours', cursive;
+    font-family:'Montserrat', sans-serif;
+    flex:50%; 
+    font-size:20px;
+    color:rgb(61, 130, 61);
+    border-radius:3px rgb(87, 128, 0);
+    
+}
+
+input, textarea{
+    font-family:'Autour One', cursive;
+    font-family:'Lavishly Yours', cursive;
+    font-family:'Montserrat', sans-serif;
+    border:0;
+    outline:none;
+    color:aliceblue;
+
+}
+
+.claseFormulario{
+    border:solid 5px #ccc;
+    padding:10px;
+    width:280px;
+    background-color:black;
+
+}
+
+.claseFormulario:focus{
+    border-color:green;
+}
+
+.enviar{
+    width:100px;
+    border:solid 5px #ccc;
+    font-family:'Autour One', cursive;
+    font-family:'Lavishly Yours', cursive;
+    font-family:'Montserrat', sans-serif;
+
+}
+
+
+button{
+    background-color:rgb(33, 54, 33);
+    color:aliceblue
+}
