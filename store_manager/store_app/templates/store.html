@@ -8,27 +8,28 @@
       <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
       <div class="list">
         {% for store in store_list %}
-        <fieldset>
+          <fieldset>
           <legend>Nombre: {{store.nombre}}</legend>
           <ul>
-            <li>Cantidad : {{store.cantidad}}</li>
-            <li>Descripcion : {{store.descripcion}}</li>
+            <li>Direccion de la tienda : {{store.ubicacion}}</li>
+            <li>Contacto: {{store.contacto}}</li>
             <li>Fecha de alta : {{store.fecha_habilitacion}}</li>
           </ul>
   
             <div>
                 <label for="">Detalles: </label>
-                <a href="{% url 'store:detail' store.id  %}">🟢😎</a>
+                <a href="{% url 'store:detail' store.id  %}">🟢</a>
             </div>
             <div>
                 <label for="">Borrar: </label>
-                <a href="{% url 'store:delete' store.id %}">❌😢</a>
+                <a href="{% url 'store:delete' store.id %}">❌</a>
             </div>
             <div>
                 <label for="">Editar: </label>
-                <a href="{% url 'store:update' store.id %}">📋😊</a>
+                <a href="{% url 'store:update' store.id %}">📋</a>
             </div>
         </fieldset>
+    
         {% endfor %}
       </div>
   
