@@ -10,10 +10,7 @@ class Store(Model):
     """
 
     nombre = models.CharField(max_length=100, default="Tienda X")
-    contacto = models.EmailField(
-        blank=False, null=False, default="no_email_contact@mail.com"
-    )
-    ubicacion = models.CharField(max_length=150, blank=True, null=True)
+    cantidad = models.IntegerField()
     fecha_habilitacion = models.DateField(auto_now=True)
 
     # podemos crear la tabla con un nombre especifico pero se lo tenemos
@@ -23,7 +20,7 @@ class Store(Model):
         db_table = "tiendas_buenos_aires"
 
     def __str__(self):
-        return f"La tienda: {self.nombre} ubicada en {self.ubicacion}"
+       return self.name
 
     def get_fields(self):
         """
