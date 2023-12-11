@@ -72,31 +72,14 @@
                      <div class="container">
             <h2>Productos Disponibles</h2>
 
-   <!-- Lista de productos -->
-<ul id="productList">
-  {% for product in product_list %}
-    <li data-id="{{ product.id }}" data-name="{{ product.name }}" data-price="{{ product.price }}">
-      <div class="containerPromos">
-        <div class="containers">
-          <br>
-          <div class="imagencerveza">
-            <img class="img1" src="{% static product.image %}">
-          </div>
+  
 
-          <div class="texto">
-            <h5>{{ product.name }}</h5>
-            <p>{{ product.description }}</p>
-            <br>
-          </div>
-
-        </div>
-
-        {{ product.name }} - ${{ product.price }}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
-
+        <!-- Lista de productos -->
+        <ul id="productList">
+            <li data-id="1" data-name="Producto 1" data-price="10">Producto 1 - $10</li>
+            <li data-id="2" data-name="Producto 2" data-price="20">Producto 2 - $20</li>
+            <li data-id="3" data-name="Producto 3" data-price="15">Producto 3 - $15</li>
+        </ul>
 
         <h2>Carrito de Compras</h2>
 
