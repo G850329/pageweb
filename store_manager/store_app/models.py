@@ -9,8 +9,8 @@ class Store(Model):
 
     """
 
-    nombre = models.CharField(max_length=100, default="Tienda X")
-    cantidad = models.IntegerField()
+    nombre = models.CharField(max_length=100, default="Cerveza X")
+    descripcion = models.CharField(max_length=3000, default="Cerveza ...")
     fecha_habilitacion = models.DateField(auto_now=True)
 
     # podemos crear la tabla con un nombre especifico pero se lo tenemos
