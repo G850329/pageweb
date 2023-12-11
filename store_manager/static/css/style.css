@@ -52,7 +52,7 @@
 
     body,
     input {
-        font-size: 14pt;
+        font-size: 12pt;
     }
 }
 
@@ -60,7 +60,7 @@
 
     body,
     input {
-        font-size: 12pt;
+        font-size: 10pt;
     }
 }
 
@@ -68,7 +68,7 @@
 
     body,
     input {
-        font-size: 11pt;
+        font-size: 8pt;
     }
 }
 
@@ -448,18 +448,16 @@ header {
     width: 100%;
     z-index: 10;
     transition: all 0.4s ease-in-out;
-   
 }
 
 .navbar {
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 12vw;
+    padding-right: 12vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    
 }
 
 .menu {
@@ -943,6 +941,5 @@ main form>div {
 main form label {
     color: white;
 }
-
 
 
