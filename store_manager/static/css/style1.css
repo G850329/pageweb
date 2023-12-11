@@ -357,6 +357,46 @@ button:hover {
     }
 }
 
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#productList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#productList li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#productList li img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    float: left;
+}
+
+#productList li h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#productList li p {
+    margin: 5px 0;
+}
+
+#productList li span {
+    font-weight: bold;
+    color: #555;
+}
+
+
+
 
 
 
