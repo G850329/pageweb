@@ -1,14 +1,30 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="store.css">
+   
+    <title>Tabla con Crud</title>
+</head>
+<body>
+
+    <!-- 
+    {% extends 'base.html' %}
+
+    {% load static %}
+
+    {% block content %}-->    
+
 
     <main>
         <div>
             <h2>Stores</h2>
             <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-            <div class="list">
-                {% for store in store_list %}
-
+            <!-- <div class="list">   -->
+           
+                <!--{% for store in store_list %} -->
+                
                 <fieldset> 
 
                     <legend>Nombre: {{store.nombre}}</legend>
@@ -86,11 +102,20 @@
 
             
                 </fieldset>
-                {% endfor %}
-            </div>
+                <!--   {% endfor %}    -->
+                
+             <!--  </div>  -->    
+           
         </div>
     </main>
         
-{% endblock %}
+
+    <!--{% endblock %} -->    
+
 
    
+
+
+    </body>
+</html>
+
