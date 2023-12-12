@@ -11,8 +11,9 @@ class Store(Model):
 
    
     nombre = models.CharField(max_length=100, default="Tienda X")
+    descripcion = models.CharField(max_length=3999)
     contacto = models.EmailField(
-        blank=False, null=False, default="no_email_contact@mail.com"
+    blank=False, null=False, default="no_email_contact@mail.com"
     )
     ubicacion = models.CharField(max_length=150, blank=True, null=True)
     fecha_habilitacion = models.DateField(auto_now=True)
