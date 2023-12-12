@@ -16,7 +16,7 @@ class Store(Model):
     volumen = models.FloatField()
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     cantidad_disponible = models.IntegerField()
-    )
+    
     ubicacion = models.CharField(max_length=150, blank=True, null=True)
     fecha_habilitacion = models.DateField(auto_now=True)
 
