@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<body>
+
 
 <main>
     <div>
@@ -11,16 +11,9 @@
       <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
       <div class="list">
         {% for store in store_list %}
-        <br>
-
- 
-        <fieldset> 
-            
-            
-          
+       <fieldset> 
     <legend>Nombre: {{store.nombre}}</legend>
-    <div class="tabla">
-        
+    <div class="tabla">    
         <div class="fila encabezado">
             <div class="celda">estilo : {{store.estilo}}</div>
             <div class="celda">precio : {{store.precio}}</div>
@@ -59,5 +52,5 @@
 
 
     
-</body>
+
 {% endblock %}
