@@ -189,13 +189,6 @@ h1 {
     align-items: center;
 }
 
-h2 {
-    font-size: clamp(1rem, 3vw - 12pt, 1.2rem);
-    font-family: "Manrope", san-serif;
-    letter-spacing: 0.3ch;
-    text-transform: uppercase;
-    color: var(--heading);
-}
 
 p {
     font-size: 1em;
