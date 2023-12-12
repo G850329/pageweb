@@ -1,17 +1,40 @@
-
-    
-{% extends 'base.html' %}
 {% load static %}
-{% block content %}
-<link rel="stylesheet" href="./css/style1.css">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static './css/style.css' %}" />
+  <link rel="stylesheet" href="{% static './css/formulario.css' %}" />
+
+  <!--       <link rel="stylesheet" href="{% static './css/style1.css' %}" />                                                         -->
+ 
+  
+  <!-- Agregar link para ver iconos en redes sociales de fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+
+  <title>Cervecería CreArte</title>
+</head>
+
+<body>
+
+    <!-- 
+    {% extends 'base.html' %}
+
+    {% load static %}
+
+    {% block content %}-->    
+
 
     <main>
         <div>
             <h2>Stores</h2>
             <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-                <div class="list">      
+            <!-- <div class="list">   -->
            
-                {% for store in store_list %} 
+                <!--{% for store in store_list %} -->
                 
                 <fieldset> 
 
@@ -22,13 +45,13 @@
                         <div class="fila encabezado">
             
                
-                            <div class="celda">Estilo : {{store.estilo}}</div>
+                            <div class="celda">estilo : {{store.estilo}}</div>
             
                     
-                            <div class="celda">Precio : {{store.precio}}</div>
+                            <div class="celda">precio : {{store.precio}}</div>
             
                     
-                            <div class="celda">Cantidad_disponible : {{store.cantidad_disponible}}</div>
+                            <div class="celda">cantidad_disponible : {{store.cantidad_disponible}}</div>
             
                     
                             <div class="celda">Fecha de alta : {{store.fecha_habilitacion}}</div>
@@ -90,15 +113,15 @@
 
             
                 </fieldset>
-                   {% endfor %}    
+                <!--   {% endfor %}    -->
                 
-               </div>     
+             <!--  </div>  -->    
            
         </div>
     </main>
         
 
- {% endblock %}   
+    <!--{% endblock %} -->    
 
 
    
