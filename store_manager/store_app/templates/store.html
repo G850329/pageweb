@@ -8,6 +8,7 @@
           <h2>Stores</h2>
           <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
           <div class="tabla">
+               {% for store in store_list %}
             <div class="fila encabezado">
                 <div class="celda">
        
