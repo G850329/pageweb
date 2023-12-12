@@ -10,10 +10,12 @@ class Store(Model):
     """
 
    
-    nombre = models.CharField(max_length=100, default="Tienda X")
-    descripcion = models.CharField(max_length=3999)
-    contacto = models.EmailField(
-    blank=False, null=False, default="no_email_contact@mail.com"
+    nombre = models.CharField(max_length=100)
+    estilo = models.CharField(max_length=50)
+    alcohol_porcentaje = models.FloatField()
+    volumen = models.FloatField()
+    precio = models.DecimalField(max_digits=10, decimal_places=2)
+    cantidad_disponible = models.IntegerField()
     )
     ubicacion = models.CharField(max_length=150, blank=True, null=True)
     fecha_habilitacion = models.DateField(auto_now=True)
