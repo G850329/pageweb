@@ -1,11 +1,4 @@
 
-    {% extends 'base.html' %}
-
-    {% load static %}
-
-    {% block content %}
-
-
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
@@ -45,16 +38,7 @@
                 
         {% endfor %}
       </div>
-
-
-    </div>
-  </main>
-{% endblock %}
-
-
-
-    
-        <div>
+       <div>
             <h2>Stores</h2>
             <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
             <div class="list">   
@@ -138,16 +122,14 @@
 
             
                 </fieldset>
-                 {% endfor %}    
-                
-              </div>    
-           
-        </div>
+  {% endfor %} 
+    </div>
+  </main>
+{% endblock %}
+
+
+
     
-        
-{% endblock %}    
-
-
-   
-
-
+ 
+                  
+      
