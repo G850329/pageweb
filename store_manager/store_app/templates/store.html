@@ -7,13 +7,13 @@
     <div>
       <h2>Stores</h2>
       <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-      <div class="list">
+      
         {% for store in store_list %}
           <fieldset> 
             
-            <div class="tabla">
-                  <legend>Nombre: {{store.nombre}}</legend>
-         <div class="fila encabezado">
+        <div class="tabla">
+            <legend>Nombre: {{store.nombre}}</legend>
+            <div class="fila encabezado">
             <div class="celda">estilo : {{store.estilo}}</div>
             <div class="celda">precio : {{store.precio}}</div>
             <div class="celda">cantidad_disponible : {{store.cantidad_disponible}}</div>
@@ -22,18 +22,20 @@
         
         
   
-            <div>
+        <div>
                 <label for="">Detalles: </label>
                 <a href="{% url 'store:detail' store.id  %}">🟢</a>
-            </div>
-            <div>
-                <label for="">Borrar: </label>
-                <a href="{% url 'store:delete' store.id %}">❌</a>
-            </div>
-            <div>
-                <label for="">Editar: </label>
-                <a href="{% url 'store:update' store.id %}">📋</a>
-            </div> 
+        </div>
+            
+        <div>
+            <label for="">Borrar: </label>
+            <a href="{% url 'store:delete' store.id %}">❌</a>
+        </div>
+        
+        <div>
+            <label for="">Editar: </label>
+            <a href="{% url 'store:update' store.id %}">📋</a>
+        </div> 
 
           
         </fieldset>
