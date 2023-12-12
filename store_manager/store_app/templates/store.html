@@ -2,79 +2,64 @@
 {% load static %}
 {% block content %}
 
- <main>
-        <div>
-          <h2>Stores</h2>
-          <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-          <div class="tabla">
-            {% for store in store_list %}
+    
+<main>
+    <div>
+      <h2>Stores</h2>
+      <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
+      <div class="list">
+        {% for store in store_list %}
+          <fieldset> 
             
-            <fieldset>
-            
-            <legend>Nombre: {{store.nombre}}</legend>
-                        
             <div class="tabla">
-        
-                <div class="fila">
-                    <div class="celda">Estilo</div>
-                    <div class="celda">Precio</div>
-                    <div class="celda">Stock</div>
-                    <div class="celda">Fecha de Alta</div>
-                </div>
-
-                <div class="fila">
-                    <div class="celda">estilo : {{store.estilo}}</div>
-                    <div class="celda">precio : {{store.precio}}</div>
-                    <div class="celda">cantidad_disponible : {{store.cantidad_disponible}}</div>
-                    <div class="celda">Fecha de alta : {{store.fecha_habilitacion}}</div>
-                </div>
-                   
-            </div>
-        
-               
-              
-        </fieldset>
-    
-
-
-            <div class="fila encabezado">
-                <div class="celda">
-       
-                    <label for="">Detalles: </label>
-       
-                    <a href="{% url 'store:detail' store.id  %}">🟢</a>
-       
-                </div> 
-                <div class="celda">
-       
-                    <label for="">Borrar: </label>
-       
-                    <a href="{% url 'store:delete' store.id %}">❌</a>
-       
-                </div>           
-                <div class="celda">
-        
-                    <label for="">Editar: </label>
-       
-                    <a href="{% url 'store:update' store.id %}">📋</a>
-       
-                </div>
-       
-            </div>
-    
+        <div class="fila encabezado">
+            <div class="celda">Nombre</div>
+            <div class="celda">Edad</div>
+            <div class="celda">Ciudad</div>
         </div>
+        <div class="fila">
+            <div class="celda">Juan</div>
+            <div class="celda">25</div>
+            <div class="celda">Ciudad A</div>
+        </div>
+        <div class="fila">
+            <div class="celda">María</div>
+            <div class="celda">30</div>
+            <div class="celda">Ciudad B</div>
+        </div>
+        <!-- Agrega más filas según sea necesario -->
+    </div
+          <legend>Nombre: {{store.nombre}}</legend>
+          <ul>
+            <li>estilo : {{store.estilo}}</li>
+            <li>precio : {{store.precio}}</li>
+            <li>cantidad_disponible : {{store.cantidad_disponible}}</li>
+            <li>Fecha de alta : {{store.fecha_habilitacion}}</li>
+          </ul>
+  
+            <div>
+                <label for="">Detalles: </label>
+                <a href="{% url 'store:detail' store.id  %}">🟢</a>
+            </div>
+            <div>
+                <label for="">Borrar: </label>
+                <a href="{% url 'store:delete' store.id %}">❌</a>
+            </div>
+            <div>
+                <label for="">Editar: </label>
+                <a href="{% url 'store:update' store.id %}">📋</a>
+            </div> 
 
-    
-        <div class="list">
-           
+          
+        </fieldset>
 
-       
-    
+              
+                
+        {% endfor %}
+      </div>
+
+
     </div>
-    
-    
-    
- 
-    </main>
+</main>
 
 {% endblock %}
