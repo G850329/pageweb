@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{% static './css/style.css' %}" />
   <link rel="stylesheet" href="{% static './css/formulario.css' %}" />
 
-  <!--       <link rel="stylesheet" href="{% static './css/style1.css' %}" />                                                         -->
+  <link rel="stylesheet" href="{% static './css/style1.css' %}" />                                                         
  
   
   <!-- Agregar link para ver iconos en redes sociales de fontawesome -->
@@ -20,21 +20,16 @@
 
 <body>
 
-    <!-- 
-    {% extends 'base.html' %}
-
-    {% load static %}
-
-    {% block content %}-->    
-
+ 
+   
 
     <main>
         <div>
             <h2>Stores</h2>
             <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-            <!-- <div class="list">   -->
+            
            
-                <!--{% for store in store_list %} -->
+                <{% for store in store_list %} 
                 
                 <fieldset> 
 
@@ -113,15 +108,15 @@
 
             
                 </fieldset>
-                <!--   {% endfor %}    -->
+                  {% endfor %}    
                 
-             <!--  </div>  -->    
+          
            
         </div>
     </main>
         
 
-    <!--{% endblock %} -->    
+    {% endblock %} 
 
 
    
