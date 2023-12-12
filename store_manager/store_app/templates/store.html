@@ -8,7 +8,7 @@
       <h2>Stores</h2>
       <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
       <div class="list">
-        {% for store in store_list %}
+
           <fieldset>
           <legend>Nombre: {{store.nombre}}</legend>
           <ul>
