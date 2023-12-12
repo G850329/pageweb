@@ -899,7 +899,7 @@ button.submit:hover {
 
 
 .list {
-    color: white;
+    color: yellow;
     display: grid;
     width: 100%;
     gap: 5rem;
