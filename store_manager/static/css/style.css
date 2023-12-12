@@ -1,9 +1,6 @@
-
-
-/*       para el crud    */
-
 body {
     font-family: Arial, sans-serif;
+    background-color:  red;
 }
 
 .tabla {
@@ -24,10 +21,6 @@ body {
 }
 
 .encabezado {
-    background-color: #f2f2f2;
+    background-color: yellow;
     font-weight: bold;
 }
-
-
-
-
