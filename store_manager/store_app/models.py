@@ -10,8 +10,8 @@ class Store(Model):
     """
 
    
-   nombre = models.CharField(max_length=100, default='Valor Predeterminado para Nombre')
-    estilo = models.CharField(max_length=50, default='Valor Predeterminado para Estilo')
+   nombre = models.CharField(max_length=100)
+    estilo = models.CharField(max_length=50)
     alcohol_porcentaje = models.FloatField(default=0.0)
     volumen = models.FloatField(default=0.0)
     precio = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
