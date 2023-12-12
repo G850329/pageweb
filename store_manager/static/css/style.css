@@ -460,7 +460,6 @@ header {
     left: -100%;
     width: 75%;
     height: 100dvh;
-    z-index: 11;
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: var(--bg-drk);
