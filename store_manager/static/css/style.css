@@ -52,7 +52,7 @@
 
     body,
     input {
-        font-size: 12pt;
+        font-size: 14pt;
     }
 }
 
@@ -60,7 +60,7 @@
 
     body,
     input {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 }
 
@@ -68,13 +68,13 @@
 
     body,
     input {
-        font-size: 8pt;
+        font-size: 11pt;
     }
 }
 
 * {
-    font-smoothing: antialiased;
-    font-smoothing: grayscale;
+    font-smooth: antialiased;
+    font-smooth: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -189,6 +189,13 @@ h1 {
     align-items: center;
 }
 
+h2 {
+    font-size: clamp(1rem, 3vw - 12pt, 1.2rem);
+    font-family: "Manrope", san-serif;
+    letter-spacing: 0.3ch;
+    text-transform: uppercase;
+    color: var(--heading);
+}
 
 p {
     font-size: 1em;
@@ -441,6 +448,7 @@ header {
     width: 100%;
     z-index: 10;
     transition: all 0.4s ease-in-out;
+   
 }
 
 .navbar {
@@ -456,10 +464,11 @@ header {
 .menu {
     position: absolute;
     top: 0;
-    
+   /* padding-left: 2rem; borrar   */
     left: -100%;
     width: 75%;
     height: 100dvh;
+    z-index: 11;
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: var(--bg-drk);
@@ -933,5 +942,6 @@ main form>div {
 main form label {
     color: white;
 }
+
 
 
