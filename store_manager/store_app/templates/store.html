@@ -5,8 +5,7 @@
 <main>
     <div>
       <h2>Stores</h2>
-      <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-
+ 
           <fieldset>
               
      
@@ -67,7 +66,6 @@
                                 <label for="">Detalles: </label>
                 
                         
-                                <a href="{% url 'store:detail' store.id  %}">🟢</a>
             
                     
                             </div>
@@ -80,7 +78,7 @@
                                 <label for="">Borrar: </label>
                 
                         
-                                <a href="{% url 'store:delete' store.id %}">❌</a>
+                          
             
                     
                             </div>
@@ -90,8 +88,7 @@
                             <div class="celda"><label for="">Editar: </label>
                 
                         
-                                <a href="{% url 'store:update' store.id %}">📋</a></div>
-            
+                             
                     
                             </div>
 
