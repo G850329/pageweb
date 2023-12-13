@@ -1,82 +1,46 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href=""{% static 'css/store.css' %}" />
-   <link rel="stylesheet" href="./static/css/store1.css" />
-   <link rel="stylesheet" href="  store_manager/static/css/store1.css />
-
-  <!-- Agregar link para ver iconos en redes sociales de fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-
-  <title>Cervecería CreArte</title>
-</head>
-
-<body>
-   <header class="header" id="header">
-    <nav class="navbar">
-        <div class="burger" id="burger">
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-      </div>
-      <span class="overlay"></span>
-      <div class="menu" id="menu">
-        <ul class="menu-inner">
-          <li class="menu-item">
-            <a class="menu-link" href="{% url 'index' %}">CreArte</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="{% url 'store:all' %}">CRUD STORES</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
+<main>
     <div>
       <h2>Stores</h2>
       <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-            
-      {% for store in store_list %} 
-        <fieldset> 
+      <div class="list">
+        {% for store in store_list %}
+          <fieldset>
           <legend>Nombre: {{store.nombre}}</legend>
-
-          <div class="tabla">
-            <div class="fila encabezado">
-              <div class="celda">estilo : {{store.estilo}}</div>
-              <div class="celda">precio : {{store.precio}}</div>
-              <div class="celda">cantidad_disponible : {{store.cantidad_disponible}}</div>
-              <div class="celda">Fecha de alta : {{store.fecha_habilitacion}}</div>
-            </div>
-          </div>
-
-          <div class="tabla">
-            <div class="fila encabezado">
-              <div class="celda">
+          <ul>
+            <li>estilo : {{store.estilo}}</li>
+            <li>precio : {{store.precio}}</li>
+            <li>cantidad_disponible : {{store.cantidad_disponible}}</li>
+            <li>Fecha de alta : {{store.fecha_habilitacion}}</li>
+          </ul>
+  
+            <div>
                 <label for="">Detalles: </label>
                 <a href="{% url 'store:detail' store.id  %}">🟢</a>
-              </div>
-              <div class="celda"> 
+            </div>
+            <div>
                 <label for="">Borrar: </label>
                 <a href="{% url 'store:delete' store.id %}">❌</a>
-              </div>
-              <div class="celda">
+            </div>
+            <div>
                 <label for="">Editar: </label>
                 <a href="{% url 'store:update' store.id %}">📋</a>
-              </div>
-            </div>
-          </div>
+            </div> 
+
+          
         </fieldset>
-      {% endfor %}    
+
+              
+                
+        {% endfor %}
+      </div>
+
+
     </div>
   </main>
-</body>
+{% endblock %}
 
-</html>
+
