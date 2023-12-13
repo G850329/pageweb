@@ -2,39 +2,26 @@
 {% load static %}
 {% block content %}
 
-
+</h2>
+            <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
+         
 <body>
 
 
-
-    <main>
+ <main>
         <div>
             <h2>Stores</h2>
             <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
-         
-               
+                <div class="list">      
+           
+                {% for store in store_list %} 
+                
                 <fieldset> 
 
                     <legend>Nombre: {{store.nombre}}</legend>
 
                     <div class="tabla">
                
-                        <div class="fila encabezado">
-            
-               
-                            <div class="celda">Estilo</div>
-            
-                    
-                            <div class="celda">Precio</div>
-            
-                    
-                            <div class="celda">Cantidad_disponible</div>
-            
-                    
-                            <div class="celda">Fecha de alta </div>
-        
-               
-                        </div>
                         <div class="fila encabezado">
             
                
@@ -106,9 +93,13 @@
 
             
                 </fieldset>
-              
+                   {% endfor %}    
+                
+               </div>     
+           
         </div>
     </main>
+        
         
 
   
