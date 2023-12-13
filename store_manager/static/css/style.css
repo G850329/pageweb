@@ -72,14 +72,7 @@
     }
 }
 
-* {
-    font-smooth: antialiased;
-    font-smooth: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
-    box-sizing: border-box;
-}
 
 
 .loader {
