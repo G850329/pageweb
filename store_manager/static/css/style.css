@@ -1,3 +1,33 @@
+body1 {
+    font-family: Arial, sans-serif;
+    background-color:  red;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.fila {
+    display: flex;
+}
+
+.celda {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.encabezado {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+
+
 
 
 @media screen and (max-width: 1680px) {
