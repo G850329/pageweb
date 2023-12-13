@@ -30,6 +30,111 @@
                 <a href="{% url 'store:update' store.id %}">📋</a>
             </div> 
 
+              <main>
+        <div>
+            <h2>Stores</h2>
+            <h2><a href="{% url 'store:create' %}">Crear un store</a></h2>
+         
+               
+                <fieldset> 
+
+                    <legend>Nombre: {{store.nombre}}</legend>
+
+                    <div class="tabla">
+               
+                        <div class="fila encabezado">
+            
+               
+                            <div class="celda">Estilo</div>
+            
+                    
+                            <div class="celda">Precio</div>
+            
+                    
+                            <div class="celda">Cantidad_disponible</div>
+            
+                    
+                            <div class="celda">Fecha de alta </div>
+        
+               
+                        </div>
+                        <div class="fila encabezado">
+            
+               
+                            <div class="celda">estilo : {{store.estilo}}</div>
+            
+                    
+                            <div class="celda">precio : {{store.precio}}</div>
+            
+                    
+                            <div class="celda">cantidad_disponible : {{store.cantidad_disponible}}</div>
+            
+                    
+                            <div class="celda">Fecha de alta : {{store.fecha_habilitacion}}</div>
+        
+               
+                        </div>
+     
+
+            
+                    </div>
+
+     
+            
+                    <div class="tabla">
+            
+                
+                        <div class="fila encabezado">
+            
+            
+                    
+                            <div class="celda">
+                
+                        
+                                <label for="">Detalles: </label>
+                
+                        
+                                <a href="{% url 'store:detail' store.id  %}">🟢</a>
+            
+                    
+                            </div>
+            
+            
+                    
+                            <div class="celda"> 
+                
+                        
+                                <label for="">Borrar: </label>
+                
+                        
+                                <a href="{% url 'store:delete' store.id %}">❌</a>
+            
+                    
+                            </div>
+            
+            
+                    
+                            <div class="celda"><label for="">Editar: </label>
+                
+                        
+                                <a href="{% url 'store:update' store.id %}">📋</a></div>
+            
+                    
+                            </div>
+
+     
+                
+                        </div>
+        
+
+            
+                </fieldset>
+              
+        </div>
+    </main>
+        
+
+
           
         </fieldset>
 
